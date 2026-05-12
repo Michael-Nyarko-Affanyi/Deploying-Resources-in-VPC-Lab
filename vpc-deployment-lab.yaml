@@ -114,7 +114,7 @@ Resources:
   PrivateRouteTable1:
     Type: AWS::EC2::RouteTable
     Properties:
-      VpcId: !Ref LapVPC
+      VpcId: !Ref LabVPC
 
   PrivateRouteTable1DefaultRoute:
     Type: AWS::EC2::Route
@@ -132,7 +132,7 @@ Resources:
   PrivateRouteTable2:
     Type: AWS::EC2::RouteTable
     Properties:
-      VpcId: !Ref LapVPC
+      VpcId: !Ref LabVPC
 
   PrivateRouteTable2DefaultRoute:
     Type: AWS::EC2::Route
