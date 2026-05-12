@@ -93,11 +93,11 @@ Resources:
 
   NAT1EIP:
     Type: AWS::EC2::EIP
-    DependsOn: AttachGateway
+    DependsOn: AttachIGW
 
   NAT2EIP:
     Type: AWS::EC2::EIP
-    DependsOn: AttachGateway
+    DependsOn: AttachIGW
 
   NATGateway1:
     Type: AWS::EC2::NatGateway
