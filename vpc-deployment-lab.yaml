@@ -151,6 +151,7 @@ Resources:
   PublicSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
+      GroupDescription: Web tier - HTTP from internet, ICMP from within VPC
       VpcId: !Ref LabVPC
       SecurityGroupIngress:
         - IpProtocol: tcp
@@ -165,6 +166,7 @@ Resources:
   PrivateSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
+      GroupDescription: App tier - ICMP from public tier only
       VpcId: !Ref LabVPC
       SecurityGroupIngress:
         - IpProtocol: icmp
