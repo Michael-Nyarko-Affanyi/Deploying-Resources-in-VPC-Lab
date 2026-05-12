@@ -198,7 +198,7 @@ Resources:
     Properties:
       ImageId: !Ref LatestAmiId
       InstanceType: t3.micro
-      IamInstanceProfile: SSMInstanceProfile
+      IamInstanceProfile: !Ref SSMInstanceProfile
       SubnetId: !Ref PublicSubnet1
       SecurityGroupIds:
         - !Ref PublicSecurityGroup
@@ -226,7 +226,7 @@ Resources:
     Properties:
       ImageId: !Ref LatestAmiId
       InstanceType: t3.micro
-      IamInstanceProfile: SSMInstanceProfile
+      IamInstanceProfile: !Ref SSMInstanceProfile
       SubnetId: !Ref PublicSubnet2
       SecurityGroupIds:
         - !Ref PublicSecurityGroup
@@ -254,7 +254,7 @@ Resources:
     Properties:
       ImageId: !Ref LatestAmiId
       InstanceType: t3.micro
-      IamInstanceProfile: SSMInstanceProfile
+      IamInstanceProfile: !Ref SSMInstanceProfile
       SubnetId: !Ref PrivateSubnet1
       SecurityGroupIds:
         - !Ref PublicSecurityGroup
@@ -264,7 +264,7 @@ Resources:
     Properties:
       ImageId: !Ref LatestAmiId
       InstanceType: t3.micro
-      IamInstanceProfile: SSMInstanceProfile
+      IamInstanceProfile: !Ref SSMInstanceProfile
       SubnetId: !Ref PrivateSubnet2
       SecurityGroupIds:
         - !Ref PublicSecurityGroup
