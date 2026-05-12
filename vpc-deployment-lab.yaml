@@ -41,7 +41,7 @@ Resources:
     Properties:
       CidrBlock: 10.0.1.0/24
       VpcId: !Ref LabVPC
-      AvailabilityZone: !Select [0, !GetAZs, '']
+      AvailabilityZone: !Select ["0", !GetAZs, '']
       MapPublicIpOnLaunch: true
 
   PublicSubnet2:
@@ -49,7 +49,7 @@ Resources:
     Properties:
       CidrBlock: 10.0.2.0/24
       VpcId: !Ref LabVPC
-      AvailabilityZone: !Select [1, !GetAZs, '']
+      AvailabilityZone: !Select ["1", !GetAZs, '']
       MapPublicIpOnLaunch: true
 
   PrivateSubnet1:
@@ -57,7 +57,7 @@ Resources:
     Properties:
       CidrBlock: 10.0.11.0/24
       VpcId: !Ref LabVPC
-      AvailabilityZone: !Select [0, !GetAZs, '']
+      AvailabilityZone: !Select ["0", !GetAZs, '']
 
   PrivateSubnet2:
     Type: AWS::EC2::Subnet
