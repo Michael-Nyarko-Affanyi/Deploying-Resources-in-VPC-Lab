@@ -8,10 +8,10 @@ Parameters:
     Default: "Michael Kwadwo Nyarko Affanyi"
     Description: Full name displayed on the public web page.
 
-    LabName:
-      Type: String
-      Default: "Securely deploying resources in a VPC using CloudFormation"
-      Description: Lab name displayed on the public web page.
+  LabName:
+    Type: String
+    Default: "Securely deploying resources in a VPC using CloudFormation"
+    Description: Lab name displayed on the public web page.
 
   LatestAmiId:
     Type: AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>
